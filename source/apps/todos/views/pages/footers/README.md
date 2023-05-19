@@ -1,2 +1,2 @@
-# Package 📦 apps.myname.views.pages.footers
+# Package 📦 apps.todos.views.pages.footers
 
