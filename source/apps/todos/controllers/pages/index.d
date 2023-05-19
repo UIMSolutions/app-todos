@@ -3,9 +3,9 @@
   License: Subject to the terms of the Apache 2.0 license, as written in the included LICENSE.txt file.  
   Authors: Ozan Nurettin Süel (Sicherheitsschmiede)                                                      
 **********************************************************************************************************/
-module apps.myname.controllers.pages.index;
+module apps.todos.controllers.pages.index;
 
-import apps.myname;
+import apps.todos;
 @safe:
 
 class DMYNAMEIndexPageController : DAPPPageController {
