@@ -8,14 +8,14 @@ module apps.todos.controllers.pages.error;
 import apps.todos;
 @safe:
 
-class DMYNAMEErrorPageController : DAPPPageController {
-  mixin(ControllerThis!("MYNAMEErrorPageController"));
+class DTDOErrorPageController : DAPPPageController {
+  mixin(ControllerThis!("TDOErrorPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(MYNAMEErrorView(this));
+      .view(TDOErrorView(this));
   }
 }
-mixin(ControllerCalls!("MYNAMEErrorPageController"));
+mixin(ControllerCalls!("TDOErrorPageController"));
