@@ -8,14 +8,14 @@ module apps.todos.controllers.pages.index;
 import apps.todos;
 @safe:
 
-class DTDOIndexPageController : DAPPPageController {
-  mixin(ControllerThis!("TDOIndexPageController"));
+class DIndexPageController : DAPPPageController {
+  mixin(ControllerThis!("IndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(TDOIndexView(this));
+      .view(IndexView(this));
   }
 }
-mixin(ControllerCalls!("TDOIndexPageController"));
+mixin(ControllerCalls!("IndexPageController"));

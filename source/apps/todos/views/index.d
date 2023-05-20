@@ -8,11 +8,11 @@ module apps.todos.views.index;
 import apps.todos;
 @safe:
 
-class DTDOIndexView : DView {
-  mixin(ViewThis!("TDOIndexView"));
+class DIndexView : DView {
+  mixin(ViewThis!("IndexView"));
 
   override DH5Obj[] toH5(STRINGAA options = null) {
-    debugMethodCall(moduleName!DTDOIndexView~":DTDOIndexView("~this.name~")::toH5");
+    debugMethodCall(moduleName!DIndexView~":DIndexView("~this.name~")::toH5");
     super.toH5(options);
 
     return [
@@ -20,4 +20,4 @@ class DTDOIndexView : DView {
     ].toH5;
   }
 }
-mixin(ViewCalls!("TDOIndexView"));
+mixin(ViewCalls!("IndexView"));

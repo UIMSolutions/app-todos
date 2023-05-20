@@ -35,6 +35,6 @@ static this() {
     App
     .name("todosApp")
     .rootPath("/apps/todos")
-    .addRoute(Route("", HTTPMethod.GET, TDOIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, TDOIndexPageController)));
+    .addRoute(Route("", HTTPMethod.GET, IndexPageController))
+    .addRoute(Route("/", HTTPMethod.GET, IndexPageController)));
 }
