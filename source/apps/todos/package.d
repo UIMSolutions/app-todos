@@ -30,11 +30,11 @@ public {
   import apps.todos.views;
 }
 
-DApp todosApp;
 static this() {
-  todosApp = App
+  AppRegistry.register("apps.todos",  
+    App
     .name("todosApp")
     .rootPath("/apps/todos")
     .addRoute(Route("", HTTPMethod.GET, TDOIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, TDOIndexPageController));
+    .addRoute(Route("/", HTTPMethod.GET, TDOIndexPageController)));
 }
