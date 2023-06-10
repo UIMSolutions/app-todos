@@ -8,7 +8,7 @@ module apps.todos.controllers.pages.error;
 import apps.todos;
 @safe:
 
-class DTDOErrorPageController : DAPPPageController {
+class DTDOErrorPageController : DPageController {
   mixin(ControllerThis!("TDOErrorPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
