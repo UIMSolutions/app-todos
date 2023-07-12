@@ -32,9 +32,11 @@ public {
 
 static this() {
   AppRegistry.register("apps.todos",  
-    App
-    .name("todosApp")
-    .rootPath("/apps/todos")
-    .addRoute(Route("", HTTPMethod.GET, IndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, IndexPageController)));
+    App("todosApp", "/apps/todos")
+      .importTranslations()
+      .addRoutes(
+        Route("", HTTPMethod.GET, IndexPageController),
+        Route("/", HTTPMethod.GET, IndexPageController)
+      )
+    );
 }
